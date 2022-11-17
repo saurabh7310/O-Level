@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Factorial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .snippet {
+            width: 80%;
+            display: block;
+            border-radius: 10px;
+            background-color: rgb(56, 54, 49);
+            margin-left: 10%;
+        }
+
+        .code-background {
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            width: 75%;
+            margin-left: 13%;
+            border-radius: 10px;
+        }
+
+        .code-output {
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            width: 75%;
+            margin-top: -2%;
+            margin-left: 13%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 3%;
+            margin-top: 0px;
+        }
+
+        .Word-color1{
+            color: #ff004f;
+        }
+
+        .Word-color {
+            font-family: consolas;
+            color: #fff;
+        }
+
+        .code {
+            color: #fff;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Python Program for <span class="Word-color1">Factorial </span>of a Number</h1>
+    <div class="snippet">
+        <br>
+        <div class="code-background">
+            <div class="code">
+                <pre class="brush: python">
+
+    def factorial(n):
+
+        result = 1
+
+        for i in range(2, n+1):
+            result = result * i
+        return result
+
+    num = int(input("Enter a number to get the factorial: "))
+    print(f"Factorial of {num} is {factorial(num)}")
+                </pre>
+            </div>
+        </div>
+
+        <h2><span class="Word-color">Output >></span></h1>
+        <div class="code-output">
+            <div class="code">
+                <pre class="brush: python">
+
+    Enter a number to get the factorial: 5
+
+    Factorial of 5 is 120
+                </pre>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>

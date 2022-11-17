@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d6fa8302c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <a href="#header" class="logo">Saurabh Sharma</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>Saurabh</span><br>Sharma From India</h1>
+            </div>
+        </div>
+        <!-- ----------------- About---------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Saurabh is a versatile Data Scientist and software enginear due to his extensive history in programming and technology. His dedication to continuously learning about new Data Science trends and concepts has made him a valuable member of the team. I am a fresher, but I completed many good projects from that experience and a Full Stack Data Science in Data Science, his expertise can help customers modernize with projects and appeal to expanding customer populations.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>GUI/Applications</li>
+                                <li><span>Flask</span><br>Web/App Interfaces</li>
+                                <li><span>Artificial Inteligence</span><br>ML, DL, NLP, Computer Vision</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2021</span><br>Post Graduation Program in Data Science, LetsUpgrage</li>
+                                <li><span>2022</span><br>Full Stack Data Science, iNeuron</li>
+                                <li><span>2022</span><br>O-Level, National Institute of Electronics & Information
+                                    Technology(NIELIT)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Fresher</span><br>Working on Self Projects</li>
+                                <li><span>YouTube Channel</span><br>codescoot regarding with Programming</li>
+                                <a href="https://www.youtube.com/channel/UCUGLHYexrr7TlXH4tfwt1fg" class="youtube"><i class="fa-brands fa-youtube"></i> Visit YouTube channel</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------Services------------------------------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-table"></i>
+                        <h2>Data Scientist</h2>
+                        <p>A Data Scientist is a professional who collects large amounts of data using analytical, statistical, and programmable skills. It is their responsibility to use data to develop solutions tailored to meet the organisation's unique needs.</p>
+                        <a href="My Services/DataScientist.html">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <h2>Tutor</h2>
+                        <p>A Tutor is responsible for helping students learn and understand new concepts and complete assignments. They prepare lessons by studying lesson plans, reviewing textbooks in detail to understand the topic they will be teaching and providing additional projects if needed during a session.</p>
+                        <a href="My Services/Tutor.html">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h2>Freelancer</h2>
+                        <p>Freelancers are self-employed individuals who are not contractually bound to one specific employer. Freelancers can work in virtually any sector, though most work in marketing and communications, creative arts, and information technology. Completely free trial, no card required.</p>
+                        <a href="My Services/Freelancer.html">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------Portfolio------------------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Hello World</h3>
+                            <p>Python Program to print Hello World</p>
+                            <a href="My Work/See More/HelloWorld.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Arithmatic Calculation</h3>
+                            <p>Python Program to calculate Arithmatic Operations</p>
+                            <a href="My Work/See More/Arithmatic.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Factorial</h3>
+                            <p>Python Program for Factorial of a number</p>
+                            <a href="My Work/See More/Factorial.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="My Work/SeeMore.html" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- ------------------------------contacts------------------------------------------------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-at"></i>saurabh.sharma7310@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8318354461</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/saurabh7310"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/saurabh7310"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://saurabh7310.medium.com"><i class="fa-brands fa-medium"></i></a>
+                            <a href="https://hackerrank.com/saurabh_sharma71"><i class="fa-brands fa-hackerrank"></i></a>
+                            <a href="https://www.youtube.com/channel/UCUGLHYexrr7TlXH4tfwt1fg" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" id="" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>2022 © copyright Saurabh. Made by <i class="fa-brands fa-codepen"></i> Saurabh Sharma</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzuTlUaB5OjmmSfoLJ35mUq66Cvmg51FmejedROXT1NqySF7lXx-BzmBFbCphYq6lxmdw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+
+</html>

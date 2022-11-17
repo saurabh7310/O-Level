@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prime Number</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .snippet {
+            width: 80%;
+            display: block;
+            border-radius: 10px;
+            background-color: rgb(56, 54, 49);
+            margin-left: 10%;
+        }
+
+        .code-background {
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            width: 75%;
+            margin-left: 13%;
+            border-radius: 10px;
+        }
+
+        .code-output {
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            width: 75%;
+            margin-top: -2%;
+            margin-left: 13%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 3%;
+            margin-top: px;
+        }
+        
+        .Word-color1{
+            color: #ff004f;
+        }
+
+        .Word-color {
+            font-family: consolas;
+            color: #fff;
+        }
+
+        .code {
+            color: #fff;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Python Program to check <span class="Word-color1">Prime Number</span></h1>
+    <div class="snippet">
+        <br>
+        <div class="code-background">
+            <div class="code">
+                <pre class="brush: python">
+
+    def prime(x, y):
+        prime_list = []
+        for i in range(x, y):
+            if i == 0 or i == 1:
+                continue
+            else:
+                for j in range(2, int(i/2)+1):
+                    if i % j == 0:
+                        break
+                else:
+                    prime_list.append(i)
+        return prime_list
+        
+    starting_range = int(input("Enter Starting Range: "))
+    ending_range = int(input("Enter Ending Range: "))
+
+    lst = prime(starting_range, ending_range)
+    if len(lst) == 0:
+        print("There are no prime numbers in this range")
+    else:
+        print("The prime numbers in this range are: ", lst)
+    
+                </pre>
+            </div>
+        </div>
+
+        <h2><span class="Word-color">Output >></span></h1>
+        <div class="code-output">
+            <div class="code">
+                <pre class="brush: python">
+
+    Enter Starting Range: 2
+    Enter Ending Range: 7
+
+    The prime numbers in this range are: [2, 3, 5]
+                </pre>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
