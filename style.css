@@ -389,6 +389,11 @@ form .btn2 {
     color: #ff004f;
 }
 
+.btnp{
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
 /* --------------CSS for small scree----------------- */
 nav .fas {
     display: none;
